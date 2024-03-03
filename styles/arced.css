@@ -1,0 +1,24 @@
+.arced-text {
+    width: 300px; /* Largura do contêiner */
+    height: 200px; /* Altura do contêiner */
+    border-radius: 50%; /* Deixa o contêiner com bordas arredondadas, criando um formato circular */
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .arced-text p {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) rotate(-90deg); /* Rotaciona o texto */
+    white-space: nowrap;
+    margin: 0;
+    padding: 20px;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #fff;
+    text-align: center;
+    width: 200%; /* Ajuste necessário para garantir que o texto se ajuste ao arco */
+    height: 200%; /* Ajuste necessário para garantir que o texto se ajuste ao arco */
+    shape-outside: circle(); /* Define a forma do contorno do texto */
+  }
